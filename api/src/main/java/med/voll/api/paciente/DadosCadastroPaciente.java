@@ -3,7 +3,7 @@ package med.voll.api.paciente;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import med.voll.api.endereco.Endereco;
+import med.voll.api.endereco.DadosEndereco;
 
 public record DadosCadastroPaciente(
         @NotBlank
@@ -16,6 +16,6 @@ public record DadosCadastroPaciente(
         String cpf,
         @NotNull
         @Valid
-        Endereco endereco
+        DadosEndereco endereco
 ) {
 }
